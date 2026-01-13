@@ -55,7 +55,7 @@ export default function MultiSelect({
         </button>
 
         {open && (
-          <div className="absolute top-full left-0 right-0 z-50 mt-1 rounded-md border border-input bg-popover text-popover-foreground shadow-md w-[fit-content] max-h-[116px] overflow-y-auto ">
+          <div className="absolute top-full left-0 right-0 z-50 mt-1 rounded-md border border-input bg-popover text-popover-foreground shadow-md w-[fit-content] max-h-[116px] overflow-y-auto [&::-webkit-scrollbar]:w-3 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[#48494D] [&::-webkit-scrollbar-thumb]:border-[4px solid rgba(0, 0, 0, 0,)] [&::-webkit-scrollbar-track]:rounded-full [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-thumb]:bg-clip-padding">
             <div className="p-1 w-[fit-content] min-w-[320px] py-2">
               {options.map((option) => (
                 <button
